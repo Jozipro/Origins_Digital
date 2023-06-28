@@ -1,0 +1,38 @@
+.css-204u17-MuiDataGrid-main {
+  color: white;
+}
+
+.css-i16b5t {
+  max-width: 100%;
+  display: flex;
+}
+
+.addButton {
+  cursor: pointer;
+  margin: auto 150px;
+  text-align: right;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.sectionEditBtn {
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.sectionDeleteBtn {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .css-i16b5t {
+    max-width: 76%;
+    display: flex;
+  }
+}

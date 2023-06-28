@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.contact-mail-client {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  color: #10bcdd;
+}
+form.contact-mail-client div {
+  margin: 10px;
+  width: 300px;
+}
+form.contact-mail-client label {
+  margin-right: 10px;
+}
+form.contact-mail-client textarea {
+  margin-top: 10px;
+  width: 220px;
+  height: 300px;
+}
+form.contact-mail-client button {
+  margin: 10px;
+  background: none;
+  border: 1px solid #10bcdd;
+  color: #10bcdd;
+  width: 90px;
+  height: 35px;
+  z-index: 10;
+  font-family: "PT Sans", sans-serif;
+  align-self: center;
+}
+.texte-explication-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.texte-explication-contact p {
+  font-family: "PT Sans", sans-serif;
+  width: 350px;
+  color: #10bcdd;
+}
+.message-de-succes-ou-erreur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.message-de-succes-ou-erreur div {
+  width: 200px;
+  margin: 10px;
+  margin-bottom: 80px;
+}

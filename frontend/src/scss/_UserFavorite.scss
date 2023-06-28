@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+@import "./variables";
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 50px;
+
+  .video-wrapper {
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 4px solid $main-blue;
+      border-radius: 5px;
+      box-shadow: 0 0 80px rgba(244, 251, 255, 0.5);
+      z-index: 3;
+    }
+  }
+
+  .video-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.search-bar-profil {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 50px;
+
+  input {
+    width: auto;
+    height: auto;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    padding: 2%;
+    margin-left: 2%;
+    border-radius: 15px;
+    border: 4px outset $main-blue;
+    outline-color: $main-blue;
+  }
+}
+
+.main-div-profil-video {
+  color: white;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.title-videos-favorites {
+  display: flex;
+  margin-top: 4%;
+  margin-left: 3%;
+  margin-bottom: 4%;
+
+  h2 {
+    text-align: center;
+    margin-left: 4%;
+    margin-top: 3%;
+  }
+}
+
+.favorite-text-and-button {
+  position: relative;
+
+  .favorite-profil-button {
+    background-color: rgba(228, 4, 4, 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    transition: ease-in-out 0.3s;
+    margin-right: 3%;
+   
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+.voir-plus-fav-video {
+  color: $main-blue;
+}
+
+@media screen and (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title-videos-favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}

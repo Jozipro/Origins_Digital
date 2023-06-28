@@ -1,0 +1,140 @@
+.list {
+
+ .wrapper{
+ .sliderArrow{
+  top: -31%;
+ }
+   #sliderArrow_sectionCategory{
+  top: -1%;
+    }
+     #sliderArrow_section{
+  top: -15%;
+    }
+ }
+  .section-name {
+    color: white;
+    text-transform: uppercase;
+    padding: 60px;
+  }
+
+  #display-all {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .wrapper-video {
+      margin-bottom: 5%;
+    }
+  }
+  .wrapper-sectionName-buttons {
+    display: flex;
+
+    .button-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      width: 80%;
+
+      align-items: center;
+
+      .next-btn {
+        color: #10bcdd;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid #10bcdd;
+      }
+
+      .follow-btn {
+        color: #858383;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid #858383;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      width: 120px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .category-container {
+    margin-left: 60px;
+    margin-bottom: 60px;
+
+    .category-btn {
+      color: red;
+      padding: 10px 20px;
+      width: 140px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      border-right: 2px solid white;
+
+      &:hover {
+        color: #10bcdd;
+      }
+    }
+  }
+
+  .container-section {
+ 
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+ @media (max-width: 1125px) {
+
+.section-name{
+  padding: 0px;
+  font-size: 25px;
+  
+
+justify-content: center;
+display: flex;
+align-items: center;
+}
+ .wrapper-sectionName-buttons{
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+
+
+ .button-wrapper{
+  width: 58%;
+  justify-content: center;
+  gap: 20px;
+ }
+ button{
+  padding: 0;
+  justify-content: center;
+  width: 80px;
+
+ 
+ }
+  
+
+ }
+
+ .follow-btn,
+ .next-btn{
+  font-size: 12px;
+
+ }
+
+}
+
+ @media (min-width: 1126px) {
+.container-section{
+
+gap: 20px;
+
+
+}
+}
+ 
+
+}

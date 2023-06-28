@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+@import "./variables";
+
+.account-menu-display {
+  margin: 1%;
+  height: auto;
+  width: auto;
+}
+.veuillez-vous-log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  color: $main-blue;
+  p {
+    color: aliceblue;
+    font-size: 36px;
+    text-align: center;
+  }
+}

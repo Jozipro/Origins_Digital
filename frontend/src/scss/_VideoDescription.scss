@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+#video-main {
+  color: white;
+
+  #video-display {
+    padding-top: 13vh;
+    margin-bottom: 50px;
+ 
+    #video-date {
+      text-align: end;
+      font-size: 1rem;
+      padding-bottom: 1%;
+      padding: 15px;
+    }
+  }
+  #video {
+    width: 100%;
+  }
+  #video-description {
+    font-size: 1.3rem;
+ 
+  }
+  #video-warning {
+    font-size: 1.2rem;
+    color: rgb(172, 172, 172);
+    padding-left: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #video-main {
+    font-family: "PT Sans";
+    width: 100vh;
+
+    #video-display {
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      margin-bottom: 120px;
+  
+      padding-top: 100px;
+      #video-date {
+        font-size: 1.3rem;
+     
+      }
+    }
+    #caroussel {
+      padding-top: 180px;
+      width: 100vw;
+    }
+  }
+}

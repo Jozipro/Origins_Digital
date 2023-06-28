@@ -1,0 +1,8 @@
+node_modules
+.env
+
+backend/public/assets/videos/
+backend/public/assets/images/confidentiel/
+public/assets/videos/
+/public/assets/images/confidentiel/
+

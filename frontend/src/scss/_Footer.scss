@@ -1,0 +1,42 @@
+@import "./variables";  
+
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .footer_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer_brand_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: $main-blue;
+    text-decoration: none;
+
+    .footer_list {
+      display: flex;
+      list-style-type: none;
+      font-family: "PT Sans";
+
+      li {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .footer_link {
+    color: $main-blue;
+    text-decoration: none; 
+  }
+}

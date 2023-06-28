@@ -1,0 +1,39 @@
+.wrapper-video {
+  position: relative;
+
+  video {
+   
+    object-fit: cover;
+
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #10bcdd;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #10bcdd;
+  }
+
+  .description-video-wrapper {
+    color: white;
+  
+
+   .description-title, .description-text{
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5%;
+    
+   
+   }
+
+
+
+
+  }
+}

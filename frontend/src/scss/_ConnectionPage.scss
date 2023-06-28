@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import "./variables";
+
+#connection {
+  background: $main-black;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 60px;
+  z-index: 0;
+  width: 100%;
+  gap: 25px;
+
+  h2 {
+    color: $main-white;
+    letter-spacing: 2px;
+    opacity: 1;
+    z-index: 10;
+    padding-top: 10%;
+    text-align: center;
+    .button-text {
+      background: none;
+      color: #50abc7;
+      border: none;
+      font-size: 1.3rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #password-error {
+    color: red;
+    font-size: 1.2rem;
+  }
+
+  .connection-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -300;
+    object-fit: center;
+
+    @media screen and (max-width: 760px) {
+      object-fit: fill;
+      height: 100%;
+    }
+  }
+
+  .user-input {
+    height: 50px;
+    width: 33%;
+    opacity: 1;
+    color: $main-white;
+    margin-bottom: 10px;
+    z-index: 10;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.197);
+    font-family: "PT sans", sans-serif;
+    padding-left: 20px;
+
+    &::placeholder {
+      color: $main-white;
+      opacity: 10;
+      z-index: 30;
+    }
+    @media screen and (max-width: 760px) {
+      width: 70%;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      height: 65px;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-style: italic;
+  }
+
+  .user-button {
+    background: none;
+    border: 1px solid $main-blue;
+    color: $main-blue;
+    width: 15%;
+    height: 50px;
+    z-index: 10;
+    font-family: "PT Sans", sans-serif;
+    &:hover {
+      cursor: pointer;
+      z-index: 10;
+      background: $main-blue;
+      color: $main-black;
+    }
+    @media screen and (max-width: 760px) {
+      width: 70%;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  }
+}

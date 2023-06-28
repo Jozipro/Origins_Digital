@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import "./variables";
+
+#profil-display {
+  font-family: "PT Sans";
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  background: $main-black;
+  padding-top: 6%;
+  .section-title {
+    color: $main-blue;
+    margin: 3%;
+    text-align: center;
+  }
+}

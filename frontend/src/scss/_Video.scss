@@ -1,0 +1,29 @@
+.admin-videos {
+  border: 1px solid black;
+  height: 300px;
+  line-height: 2rem;
+  button {
+    text-decoration: none;
+    color: $main-blue;
+    transition: 0.3s ease-in-out;
+    border: solid 2px;
+    border-radius: 5%;
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: $main-black;
+    &:hover {
+      background-color: rgb(85, 85, 85);
+      opacity: 1.4;
+      transform: scale(1.1);
+    }
+  }
+  .video-text {
+    font-size: 2rem;
+    height: 40px;
+    input {
+      height: 40px;
+      background: rgba(128, 128, 128, 0);
+      font-size: 2rem;
+    }
+  }
+}
